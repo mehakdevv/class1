@@ -1,0 +1,210 @@
+<html>
+
+<head>
+    <title>class</title>
+    <style>
+        #1st_tr {
+            background-color: black;
+        }
+
+        /* class ka same name assign kr skty ha or ye <th.........>esy likha jay ga
+or upr isy " . " ky sth likhy gy jo same name ya ham ny class ky agy likha tb hi function call hoga */
+        .first-th {
+            font-size: 150%;
+            color: black;
+        }
+
+        ul {
+            list-style-type: circle;
+        }
+
+        table,
+        table td,
+        table th {
+            border: 1px, solid black;
+            border-collapse: collapse;
+            padding: 10px;
+        }
+
+        table td {
+            text-align: center;
+        }
+
+        table {
+            background-color: azure;
+            width: 30%;
+        }
+
+        table td {
+            border-color: black;
+        }
+
+        table th {
+            text-align: center;
+        }
+
+        table caption {
+            background-color: rgb(245, 245, 208);
+            color: rgb(0, 4, 4);
+        }
+
+        table th,
+        table td {
+            padding: 5px;
+        }
+
+        /*padding-right,left,top,bottom*/
+        /* if i want to add padding on left,right,bottom,and top then use
+    table td,table th{
+        padding-right: 10px;
+        padding-left: 10px;
+        padding-bottom: 10px;
+        padding-top: 10px;
+        } */
+        table {
+            border-radius: 5px;
+            border-color: black;
+            border-spacing: 5px;
+        }
+
+        /* table :nth-child.....
+            tr:nth-child(even)
+            {background-color: aqua;
+                color: black;
+            }
+            table
+            th:nth-child(odd){
+                background-color: brown;
+                color: azure;
+            } 
+            table
+            /* td:nth-child(even)
+            {
+                background-color: blueviolet;
+                color: bisque; 
+                } */
+        table tr {
+            border-bottom: 5px;
+        }
+
+        table tr:hover {
+            background-color: rgb(202, 209, 133);
+        }
+        body{
+            background-color: lightblue;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>1st heading</h1>
+    <h5>2nd heading</h5>
+    <h2>6th heading</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit suscipit nemo doloribus dolores, ratione
+        eligendi aliquid maxime ipsam dicta repellat. Modi debitis in nobis ullam itaque et, consectetur sunt
+        voluptatum.</p>
+    <P> This is a paragraph</P>
+    <p> paragraph 1 <br> paragraph 2</p>
+    <span>3rd heading</span>
+    <span>4th heading</span>
+    <h3> LINKS</h3>
+    <h4> Absolute Link</h4>
+    <a href="https://www.youtube.com/">
+        <target_blank>Youtube
+    </a>
+    <h4>Relative Link</h4>
+    <a href="pages/class2.html">page 2</a>
+    <!-- Lists -->
+    <h2>Lists</h2>
+    <h3>unordered list</h3>
+    <ul>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ul>
+    <h3>ordered list</h3>
+    <ol>
+        <li>item 1</li>
+        <li>item 2</li>
+        <li>item 3</li>
+    </ol>
+    <h3>Description List</h3>
+    <dl>
+        <dt>Coffee</dt>
+        <dd>A hot drink made from roasted and ground seeds of the coffee</dd>
+        <dt>Tea</dt>
+        <dd>A hot drink made by infusing the dried, crushed leaves of the
+            tea plant in boiling water</dd>
+        <dt>Milk</dt>
+        <dd>A white liquid</dd>
+    </dl>
+    <!-- Tables without setting width -->
+    <h3>Tables</h3>
+    <table>
+        <!-- if we want to add caption -->
+        <!-- <caption>Students Data</caption> -->
+        <caption>Students Data</caption>
+        <colgroup>
+            <!-- Empty collapse
+            <col span="3">
+    <col span="2" style="background-color: pink"> -->
+            <!-- visibility collapse -->
+            <!-- if want to hide any column -->
+            <!-- <col span="1" style="visibility: collapse;"> -->
+            <col span="1" style="background-color:beige;">
+            <col span="1" style="background-color:aqua;">
+            <col span="1" style="background-color: aquamarine;">
+        </colgroup>
+        <tr class="first-th">
+            <!-- Table colspan -->
+            <!-- if collapse table headers then add colspan="2" -->
+            <!-- <th colspan="2">Name</th> -->
+            <!-- if we want to rowspan then use rowspan="any number"in <th> -->
+            <!-- <th rowspan="2">Name</th> -->
+            <th>Name</th>
+            <th>Roll no</th>
+            <th>Marks</th>
+        </tr>
+        <tr id="1st_tr">
+            <td>Ali</td>
+            <td>1</td>
+            <td>45</td>
+        </tr>
+        <tr id="2nd-tr">
+            <td>Ahmad</td>
+            <td>2</td>
+            <td>39</td>
+        </tr>
+        <tr id="3rd-tr">
+            <td>Fatima</td>
+            <td>3</td>
+            <td>42</td>
+        </tr>
+    </table>
+    <!-- <h3>Tables with set width if i want to add height then add height in tr not in th</h3>
+    <table style="width:100%">
+        <tr>
+            <th style="width: 40%;">Name</th>
+            <th style="width: 30%;">Roll no</th>
+            <th style="width: 30%;">Marks</th>
+        </tr>
+        <tr>
+            <td>Ali</td>
+            <td>1</td>
+            <td>45</td>
+        </tr>
+        <tr>
+            <td>Ahmad</td>
+            <td>2</td>
+            <td>39</td>
+        </tr>
+        <tr>
+            <td>Fatima</td>
+            <td>3</td>
+            <td>42</td>
+        </tr>
+    </table> -->
+
+</body>
+
+</html>
