@@ -1,0 +1,99 @@
+<html>
+    <head>
+        <title>form</title>
+    </head>
+    <body>
+        <h2>Form</h2>
+        <form action="">
+<!-- The input readonly attribute specifies that an input field is read-only.
+A read-only input field cannot be modified
+(however, a user can tab to it, highlight it, and copy the text from it).
+The value of a read-only input field will be sent when submitting the form! -->
+            <label for="search"><i><b>search</b></i></label>
+            <input type="search" name="searchbar" id="search" placeholder="searchbar">
+            <br>
+            <label for="name"><i><b>Name:</b></i></label>
+            <br>
+            <input type="text"name="username" id="name" placeholder="Enter your name....">
+            <br>
+            <label for="email"><i><b>Email</b></i></label>
+            <br>
+            <input type="email"name="useremail"id="email" placeholder="abc@def">
+            <br><br>
+            <label for="gender"><i><b>Gender</b></i></label>
+            <br>
+            <label for="male">Male:</label>
+            <input type="radio"name="gender" id="male">
+            <label for="female">Female:</label>
+            <input type="radio" name="gender" id="female">
+            <br><br>
+            <label for=""><i><b>Subjects</b></i></label>
+            <br>
+            <label for="eng">English</label>
+            <input type="checkbox" name="eng" id="eng">
+            <br>
+            <label for="urdu">Urdu</label>
+            <input type="checkbox" name="urdu" id="urdu">
+            <br>
+            <label for="math">Math</label>
+            <input type="checkbox" name="math" id="math">
+            <br>
+            <label for="sci">Science</label>
+            <input type="checkbox" name="sci" id="sci">
+            <br><br>
+            <label for=""><i><b>Upload File</b></i></label>
+            <input type="file" name="" id="">
+            <br><br>
+<!-- The input disabled attribute specifies that an input field should be disabled.
+A disabled input field is unusable and un-clickable.
+The value of a disabled input field will not be sent when submitting the form! -->
+            <label for=""><i><b>Password</b></i></label>
+            <input type="password" name="" id="" placeholder="********">
+            <br><br>
+            <label for=""><i><b>Date</b></i></label>
+            <br>
+            <input type="date" name="" id="">
+            <br><br>
+            <label for=""><i><b>Datetime-local</b></i></label>
+            <br>
+            <input type="datetime-local">
+            <br><br>
+<!-- The input size attribute specifies the visible width,
+in characters, of an input field.
+The default value for size is 20.
+Note: The size attribute works with the following input types:
+text, search, tel, url, email, and password. -->
+
+
+            <label for=""><i><b>Telephone</b></i></label>
+            <br>
+            <input type="tel" name="" id="">
+            <br><br>
+<!-- The input required attribute specifies
+that an input field must be filled out before submitting the form. -->
+
+            <input type="hidden" name="id">
+            <br><br>
+            <label for=""><i><b>% Range</b></i></label>
+            <br>
+            <input type="range" name="" id="">
+            <br><br>
+            <input type="url">
+            <br>
+            <label for="">Select Element</label>
+            <br>
+            <select multiple name="cars" id="">
+            <option selected>Select the car from following</option>
+            <option value="Toyata">Toyata</option>
+            <option value="Civic">Civic</option>
+            <option value="Corolla">Corolla</option>
+            <option value="BMW">BMW</option>
+            </select>
+            <br><br>
+            <label for=""><i><b>Write About Yourself</b></i></label>
+            <textarea rows="6" cols="12"></textarea>
+            <button type="submit"><i><b>Login</b></i></button>
+            <button type="reset"><i><b>Reset</b></i></button>
+        </form>
+    </body>
+</html>

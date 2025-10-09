@@ -1,0 +1,119 @@
+<html>
+
+<head>
+    <title>table</title>
+</head>
+<style>
+    body {
+        background-color: lightgray;
+    }
+
+    table th {
+        padding: 10px;
+    }
+
+    table td {
+        padding: 5px;
+    }
+
+    table th,
+    table td {
+        border-bottom: 1px solid black;
+        border-left: 1px solid black;
+        border-right: 1px solid black;
+        
+        border-collapse: collapse;
+    }
+
+     table th{
+        border-top: 1px solid black;
+     }
+
+    .break {
+        border-bottom: none;
+    }
+
+    .last td{
+        border-bottom: 1px solid black;
+    }
+</style>
+<body>
+    <h2>
+        <Table>
+    </h2>
+    <table style="border-collapse: collapse;">
+        <tr>
+            <!-- <th></th> -->
+            <th style="border: none;"></th>
+            <th>08:00-09:00</th>
+            <th>09:00-09:30</th>
+            <th>09:30-10:30</th>
+            <th>10:30-11:30</th>
+            <th>11:30-12:00</th>
+            <th>12:00-01:00</th>
+            <th>01:00-01:30</th>
+        </tr>
+        <tr>
+            <th style="font-weight: bold;">Monday</th>
+            <td>Math</td>
+            <td>Urdu</td>
+            <td>English</td>
+            <td>Science</td>
+            <td class="break">B</td>
+            <td>Islamyat</td>
+            <td>History</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Tuesday</td>
+            <td>History</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Math</td>
+            <td class="break">R</td>
+            <td>Urdu</td>
+            <td>Activity</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Wednesday</td>
+            <td>English</td>
+            <td>History</td>
+            <td>Urdu</td>
+            <td>Math</td>
+            <td class="break">E</td>
+            <td>Science</td>
+            <td>Islamyat</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Thursday</td>
+            <td>Maths</td>
+            <td>Urdu</td>
+            <td>English</td>
+            <td>Science</td>
+            <td class="break">A</td>
+            <td>Islamyat</td>
+            <td>History</td>
+        </tr>
+        <tr>
+            <td style="font-weight: bold;">Friday</td>
+            <td>History</td>
+            <td>Science</td>
+            <td>English</td>
+            <td>Math</td>
+            <td class="break">-----</td>
+            <td>-----</td>
+            <td>-----</td>
+        </tr>
+        <tr class="last">
+            <td style="font-weight: bold;">Saturday</td>
+            <td>Maths</td>
+            <td>Urdu</td>
+            <td>English</td>
+            <td>Science</td>
+            <td class="break">k</td>
+            <td>Islamyat</td>
+            <td>History</td>
+        </tr>
+    </table>
+</body>
+
+</html>
